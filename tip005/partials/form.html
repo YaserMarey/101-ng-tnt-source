@@ -1,0 +1,22 @@
+<div>
+    <input type="button" value="Edit" ng-click="edit()" ng-show="canEdit"/>
+    <input type="button" value="Search" ng-click="search()" ng-show="canSearch"/>
+    <input type="button" value="Cancel" ng-click="cancel()" ng-show="canCancel"/>
+    <input type="button" value="Ok" ng-click="ok()" ng-show="canOk"/>
+    <input type="button" value="Save" ng-click="save()" ng-show="canSave"/>
+</div>
+
+<div>
+    <div>
+        <div>Full Name</div>
+        <div><input ng-disabled="isReadOnly" type="text" ng-model="data.fullname"/></div>
+    </div>
+    <div>
+        <div>Address</div>
+        <div><input ng-disabled="isReadOnly" type="text" ng-model="data.address"/></div>
+    </div>
+    <div>
+        <div>Phone Number</div>
+        <div><input ng-disabled="isReadOnly "type="text" ng-model="data.phonenumber"/></div>
+    </div>
+</div>
