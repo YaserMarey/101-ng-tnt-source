@@ -19,7 +19,7 @@ app.factory('stateService', function(){
 app.directive( 'drctv1', function(stateService) {
   return {
     restrict: 'E',
-    scope:{}, //Isolated Scope
+    scope:{}, //isolated Scope
     template: '<button ng-click="setState()">set State</button>',
     controller: function($scope){
       $scope.setState = function(){

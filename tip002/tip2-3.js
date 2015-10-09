@@ -22,9 +22,9 @@ app.directive( 'child', function() {
   return {
     restrict: 'E',
     scope: {},
-    require: '^parent', //Look on parent or the same node for controller
+    require: '^parent', //look on parent or the same node for controller
     template: '<button ng-click="clicked()">click me</button>',
-    link: function(scope, elm, attrs, parentCtrl){ //Then inject it as parentCtrl
+    link: function(scope, elm, attrs, parentCtrl){ //then inject it as parentCtrl
       scope.clicked = function(){
         parentCtrl.calculate();
       }

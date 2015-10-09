@@ -7,7 +7,7 @@ var app = angular.module("app", []);
 app.directive( 'drctv1', function() {
   return {
     restrict: 'E',
-    scope:{}, //Isolated Scope
+    scope:{}, //isolated Scope
     template: '<input type="text" ng-model="data.message"/></br><button ng-click="sendMessage(data)">send message</button>',
     controller: function($scope, $rootScope){
       $scope.sendMessage = function(data){
@@ -22,7 +22,7 @@ app.directive( 'drctv1', function() {
 app.directive( 'drctv2', function($rootScope) {
   return {
     restrict: 'E',
-    scope: {}, //Isolated Scope
+    scope: {}, //isolated Scope
     template: '<span>{{data.message}}</span> ',
     link: function(scope, elm, attrs) {
       scope.data = {message:""};

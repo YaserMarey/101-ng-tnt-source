@@ -66,10 +66,10 @@ app.directive( 'drctv2', function($log) {
         $scope.msg = msg;
       };
 
-      $scope.index = $scope.subscribe({obj: this}); //Subscribe me
+      $scope.index = $scope.subscribe({obj: this}); //subscribe me
 
       $scope.$on("$destroy", function() {
-        $scope.unsubscribe({index: $scope.index}); //Subscribe me
+        $scope.unsubscribe({index: $scope.index}); //subscribe me
       });
 
     }

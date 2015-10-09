@@ -104,7 +104,7 @@ app.controller('formCtrl', ['$scope', '$rootScope', '$state', '$window',
             $scope.canOk = false;
       }
       else if(toState.name == 'form.searching'){
-            $scope.data = {};                         // Clear all form data to allow user to enter
+            $scope.data = {};                         // clear all form data to allow user to enter
                                                       // data to search with.
             $scope.isReadOnly = false;
             $scope.canEdit = false;
