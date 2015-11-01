@@ -209,9 +209,9 @@ app.directive('formToolbar', function () {
                return {
                  restrict: 'E',
                  replace: true,
-                 templateUrl: 'partials/toolbarawesome.html', //'partials/toolbarglyphicon.html'
-                 scope: false , //decided to share its scope with the parent since it will be tightly
-                                //working as part of the page and needs to access the parent scope a lot
+                 templateUrl: 'partials/toolbarawesome.html', //'toolbarglyphicon.html'
+                 scope: false , /*decided to share its scope with the parent since it will be tightly
+                                working as part of the page and needs to access the parent scope a lot*/
                  link: function ($scope, $element, $attrs) {
                  }
                }
