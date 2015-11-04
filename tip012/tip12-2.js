@@ -9,8 +9,9 @@ app.constant('appconfig', {
 
 app.provider('employeeSvc', function(){
   var isHijri;
-  this.isHijri = function(value){
-    isHijri = value;
+  this.isHijri = function(value){ //isHijri is defined on the provider
+    isHijri = value;              //and its sole purpose is to adjust
+                                  //the service behaviour
   }
   this.$get = function(){
     var firstname = 'Khaled';
@@ -19,8 +20,8 @@ app.provider('employeeSvc', function(){
     return {
       firstname: firstname,
       lastname: lastname,
-      birthdate: birthdate //notice that isHijri is only for configuration
-                           //and it is not part of the public service API
+      birthdate: birthdate //isHijri not part of the public service API
+
     }
   }
 });
