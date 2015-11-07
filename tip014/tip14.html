@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../lib/angular/angular.js"></script>
+    <script src="tip14.js"></script>
+</head>
+<body ng-app="app">
+<div ng-controller="tabctrl">
+    <div><input type="button" ng-click="tabclicked()" value="Employee One"/>
+        <input type="button" ng-click="tabclicked()" value="Employee Two"/></div>
+    <div ng-show="showtab">
+        <div ng-controller="ctrl" style="background-color: lightblue">
+            <div>Employee One</div>
+            <div>First Name: <input ng-model="employee.firstname"/></div>
+            <div>Last Name : <input ng-model="employee.lastname"/></div>
+            <div>Birthdate : <input ng-model="employee.birtdate"/></div>
+        </div>
+    </div>
+    <div ng-show="!showtab">
+        <div ng-controller="ctrl" style="background-color: lightgreen">
+            <div>Empllyee Two</div>
+            <div>First Name: <input ng-model="employee.firstname"/></div>
+            <div>Last Name : <input ng-model="employee.lastname"/></div>
+            <div>Birthdate : <input ng-model="employee.birtdate"/></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

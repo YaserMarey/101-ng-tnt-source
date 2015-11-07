@@ -1,8 +1,9 @@
 // provider methods
 'use strict';
 var app = angular.module('app', []);
-
-app.provider('employeeSvc', function(){ //Create a service using provide method called on module, the same method is also exposed through $provide service.
+//Create a service using provide method called on module
+// the same method is also exposed through $provide service.
+app.provider('employeeSvc', function(){
 
   this.$get = function(){
 
